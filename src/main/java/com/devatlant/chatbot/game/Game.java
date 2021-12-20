@@ -25,7 +25,7 @@ public class Game {
         }
         final String gamerInput = message.getText();
         if (gamerInput.startsWith("/")){
-            if (gamerInput.equals("start")){
+            if (gamerInput.equals("/start")){
                 return new ResponseWithCounter(RESPONSE.START, guessCounter);
             }
             if (gamerInput.equals("/help")){

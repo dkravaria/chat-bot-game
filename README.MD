@@ -1,3 +1,4 @@
+[![BuildAndTest](https://github.com/dkravaria/chat-bot-game/actions/workflows/BuildAndTest.yml/badge.svg)](https://github.com/dkravaria/chat-bot-game/actions/workflows/BuildAndTest.yml)
 # Simple Telegram based game
 
 This project uses under the hood a popular java abstraction library for accessing Telegram Bot API - [org.telegram.telegrambots](https://github.com/rubenlagus/TelegramBots)

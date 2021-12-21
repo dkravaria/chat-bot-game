@@ -44,8 +44,9 @@ public class BotEngine extends TelegramLongPollingBot {
     }
 
     private void processMessage(Message message) {
-        LOGGER.info(String.format("process message [%s] from client [%s %s]",
-            message.getText(), message.getFrom().getFirstName(), message.getFrom().getLastName()));
+        User user = new User(message.getFrom().getFirstName(), message.getFrom().getLastName());
+        String logMsg = String.format("process message [%s] from client [%s %s]", message.getText(), user.getFirstName(), user.getLastName());
+        BotLogger.info(LOGGER, logMsg, user);
         final ResponseWithCounter response = game.reactOnGamerMessage(message);
         sendMsg(message, response);
     }

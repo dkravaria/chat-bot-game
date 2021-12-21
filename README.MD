@@ -2,14 +2,22 @@
 # Simple Telegram based game
 
 This project uses under the hood a popular java abstraction library for accessing Telegram Bot API - [org.telegram.telegrambots](https://github.com/rubenlagus/TelegramBots)
+___
 
-## How to
+## About me
 
-### Requirements
+Je m'appelle **Daria Kravchenko** et j'étudie actuellement en Master  programme des double diplômes Informatique et Statistique à **l’Université Lumière Lyon 2**
+
+J'ai une licence en imprimerie, donc j'ai travaillé comme illustratrice de livres pour enfants pendant un certain temps. Ensuite, j'ai rejoint une agence de marketing où j'ai été responsable des médias sociaux pendant trois ans, mais lorsque j'ai intégré le programme, j'ai dû changer d'emploi et commencer à gérer des projets dans une petite entreprise qui construit des sites web. Je suis maintenant à la recherche d'un stage en tant que chef de projet en France et j'envisage de poursuivre mon développement dans cette direction.
+___
+
+### How to
+
+#### Requirements
 1. JDK/JRE 1.8
 2. maven for dependency management and building stuff
 
-### Step by step installation instruction
+#### Step by step installation instruction
 1. In your active Telegram account find a special bot [@BotFather](https://telegram.me/BotFather)
 2. Then send command `/newbot`
 3. Give a unique name to your new bot
@@ -17,7 +25,7 @@ This project uses under the hood a popular java abstraction library for accessin
 5. In your terminal/cmd run `mvn package`
 6. In your terminal/cmd run `java -jar -Dtelegram.secret.key=MySecretKeyFromStep4 target/simpleBot-1.0-SNAPSHOT-jar-with-dependencies.jar`
 
-### How to use
+#### How to use
 
 1. Open your Telegram app (mobile/Desktop)
 2. Find your bot (which you have created in step 2 see previous section)

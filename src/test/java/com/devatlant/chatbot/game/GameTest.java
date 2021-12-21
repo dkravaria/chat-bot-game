@@ -18,7 +18,17 @@ class GameTest {
         testSubject = new Game(100, new Random());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
+    public void game_is_integer_return_true_when_receive_integer(){
+        assertTrue(Game.isInteger("42"));
+    }
+
+    @Test
+    public void game_is_integer_return_true_when_receive_string(){
+        assertFalse(Game.isInteger("/start"));
+    }
+
+    @Test
     void should_respond_with_start() {
         Message start = buildMessage("/start");
         ResponseWithCounter res = testSubject.reactOnGamerMessage(start);
